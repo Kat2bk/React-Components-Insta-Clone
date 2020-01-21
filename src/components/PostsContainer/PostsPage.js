@@ -8,7 +8,10 @@ const PostsPage = (props) => {
   return (
     <div className="posts-container-wrapper">
       {/* map through data here */}
-      {props.data.map}
+      {props.data.map(item => (
+        <Post post = {item}/>
+      ))}
+    
     </div>
   );
 };
