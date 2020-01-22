@@ -4,7 +4,7 @@ PostsContainer components and the CommentSection Components.
 Not all files need code added. 
 Look at each file to see where you need to pass props or add code 
 */
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import SearchBar from "./components/SearchBar/SearchBarContainer";
@@ -19,7 +19,8 @@ const App = () => {
   return (
     <div className="App">
       {/* Add components here  and pass props where appropriate */}
-      <PostsPage data = {data} />
+      <SearchBar />
+      <PostsPage data={data} />
     </div>
   );
 };
